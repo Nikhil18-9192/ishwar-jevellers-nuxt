@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Toolbar />
     <Nuxt />
   </div>
 </template>
@@ -15,9 +16,23 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 *,
