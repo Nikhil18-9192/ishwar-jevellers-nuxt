@@ -1,8 +1,5 @@
 <template>
   <div id="header">
-    <div class="logo">
-      <img src="/logo.png" alt="" />
-    </div>
     <div class="text">
       <h1>Redefining exclusivity!</h1>
       <p>
@@ -35,18 +32,11 @@ export default {
   background-repeat: no-repeat;
   background-position: 41% 22%, 90% 60%, 20% 0%;
 
-  .logo {
-    padding-top: 24px;
-    img {
-      height: 82px;
-      width: 128px;
-      object-fit: contain;
-    }
-  }
   .text {
     max-width: 625px;
     float: right;
     padding-right: 70px;
+    padding-top: 138px;
     h1 {
       font-style: normal;
       font-weight: 600;

@@ -3327,6 +3327,11 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
+esf@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/esf/-/esf-0.0.2.tgz#9f8f82977ed98b652724ffa2043f907119097113"
+  integrity sha1-n4+Cl37Zi2UnJP+iBD+QcRkJcRM=
+
 eslint-config-prettier@^7.2.0:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-7.2.0.tgz#f4a4bd2832e810e8cc7c1411ec85b3e85c0c53f9"

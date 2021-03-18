@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div class="logo">
+      <img src="/logo.png" alt="" />
+    </div>
     <Toolbar />
     <Nuxt />
   </div>
@@ -16,7 +19,17 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-
+.logo {
+  position: fixed;
+  top: 24px;
+  left: 72px;
+  z-index: 999;
+}
+.logo img {
+  height: 82px;
+  width: 128px;
+  object-fit: contain;
+}
 body {
   margin: 0;
   padding: 0;
