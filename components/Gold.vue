@@ -28,6 +28,7 @@
           />
         </transition>
         <p class="category" @click="category = true">category</p>
+        <img class="image" src="/gold.png" alt="" />
       </div>
     </div>
   </div>
@@ -114,6 +115,9 @@ export default {
       width: 50%;
       height: 100%;
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       .category {
         font-style: normal;
         font-weight: 600;
@@ -130,6 +134,12 @@ export default {
         position: absolute;
         right: 0px;
         transition: 0.3s ease all;
+      }
+      .image {
+        max-width: 515px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
       }
     }
   }
