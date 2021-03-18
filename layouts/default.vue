@@ -1,10 +1,17 @@
 <template>
   <div>
+    <transition name="slide">
+      <CategoryModal
+        v-if="$store.state.collection"
+        @dismiss="$store.commit('toggleCollection')"
+      />
+    </transition>
     <div class="logo">
       <img src="/logo.png" alt="" />
     </div>
     <Toolbar />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 
@@ -53,5 +60,12 @@ a {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.5, 1);
+}
+.slide-enter, .slide-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  transform: translateX(100%);
 }
 </style>

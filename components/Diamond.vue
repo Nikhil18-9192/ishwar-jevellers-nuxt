@@ -1,9 +1,9 @@
 <template>
-  <div id="gold">
+  <div id="diamond">
     <div class="dual">
       <div class="left">
         <div class="text">
-          <h4>Gold</h4>
+          <h4>diamond</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique
             ultrices aliquet bibendum dictum hendrerit diam neque. Leo at nisl,
@@ -21,32 +21,46 @@
       </div>
       <div class="right">
         <p class="category" @click="category = true">category</p>
-        <img class="image" src="/gold.png" alt="" />
+        <img class="image" src="/diamond.png" alt="" />
       </div>
     </div>
-    <img class="bottom-line" src="/bottom-line.png" alt="" />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'GoldComponent',
+  name: 'diamondComponent',
   data() {
-    return {}
+    return {
+      category: false,
+      categories: [
+        'Kolhapuri Thushi',
+        'Kolhapuri Saaj',
+        'Necklace',
+        'Manglsutra',
+        'Ring',
+        'Tops',
+        'Long Necklace',
+        'Temple Jewellery',
+        'Chain/Braslet',
+      ],
+    }
   },
 }
 </script>
 
 <style lang="scss" scoped>
-#gold {
-  background: #fffbf4;
+#diamond {
+  background: #f2feff;
   width: 100%;
   position: relative;
-  height: 100vh;
+  height: 660px;
   padding: 0 72px;
-  background-image: url('/gold-bg1.png');
+  background-image: url('/diamond-bg3.png'), url('/diamond-bg1.png'),
+    url('/diamond-bg2.png');
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-position: 50% 100%, 92% 20%, 95% 85%;
+  background-size: 92px, 520px, 265px;
   .dual {
     display: flex;
     width: 100%;
@@ -65,9 +79,10 @@ export default {
           font-size: 89px;
           line-height: 108px;
           text-transform: uppercase;
-          color: #98766c;
+          color: #679499;
         }
         p {
+          font-family: Open Sans;
           font-style: normal;
           font-weight: 300;
           font-size: 17px;
@@ -106,7 +121,7 @@ export default {
         font-size: 23px;
         line-height: 28px;
         text-transform: uppercase;
-        color: #98766c;
+        color: #679499;
         position: absolute;
         right: 0;
         top: 35px;

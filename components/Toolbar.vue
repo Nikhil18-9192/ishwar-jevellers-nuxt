@@ -27,7 +27,7 @@ export default {
 <style lang="scss" scoped>
 #toolbar {
   position: fixed;
-  top: 187px;
+  top: 255px;
   left: 72px;
   z-index: 999;
   .menus {

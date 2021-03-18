@@ -20,20 +20,22 @@ export default {
 
 <style lang="scss" scoped>
 #category-modal {
-  position: relative;
-  height: 100%;
-  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 50%;
   background: linear-gradient(
     140.27deg,
     rgba(255, 255, 255, 0.87) 15.39%,
     rgba(255, 255, 255, 0.1131) 90.86%
   );
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(10px);
   z-index: 1;
 
   .close {
     position: absolute;
-    right: 10px;
+    right: 72px;
     top: 32px;
     z-index: 10;
     cursor: pointer;

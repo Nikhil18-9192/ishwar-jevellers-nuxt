@@ -2,6 +2,10 @@
   <div class="home-page">
     <HeaderSection />
     <Gold />
+    <Silver />
+    <Diamond />
+    <Testimonial />
+    <About />
   </div>
 </template>
 

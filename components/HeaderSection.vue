@@ -23,7 +23,7 @@ export default {
 #header {
   position: relative;
   width: 100%;
-  min-height: 660px;
+  min-height: 100vh;
   background: #dbecf2;
   padding: 0 72px;
   background-image: url('/header-bg1.png'), url('/header-bg2.png'),
@@ -58,15 +58,6 @@ export default {
       height: 3px;
       background: #335e73;
     }
-  }
-  .bottom-line {
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    z-index: 10;
-    max-width: 715px;
-    width: 100%;
   }
 }
 </style>

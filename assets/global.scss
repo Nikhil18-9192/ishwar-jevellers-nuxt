@@ -28,3 +28,13 @@
     @content;
   }
 }
+
+.bottom-line {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 10;
+  max-width: 715px;
+  width: 100%;
+}

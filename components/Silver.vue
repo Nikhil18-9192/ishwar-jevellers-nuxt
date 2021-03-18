@@ -1,9 +1,13 @@
 <template>
-  <div id="gold">
+  <div id="silver">
     <div class="dual">
       <div class="left">
+        <img class="image" src="/silver.png" alt="" />
+      </div>
+      <div class="right">
+        <p class="category" @click="category = true">category</p>
         <div class="text">
-          <h4>Gold</h4>
+          <h4>Silver</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique
             ultrices aliquet bibendum dictum hendrerit diam neque. Leo at nisl,
@@ -19,10 +23,6 @@
           </div>
         </div>
       </div>
-      <div class="right">
-        <p class="category" @click="category = true">category</p>
-        <img class="image" src="/gold.png" alt="" />
-      </div>
     </div>
     <img class="bottom-line" src="/bottom-line.png" alt="" />
   </div>
@@ -30,7 +30,7 @@
 
 <script>
 export default {
-  name: 'GoldComponent',
+  name: 'silver',
   data() {
     return {}
   },
@@ -38,34 +38,65 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#gold {
-  background: #fffbf4;
-  width: 100%;
+#silver {
   position: relative;
+  width: 100%;
   height: 100vh;
   padding: 0 72px;
-  background-image: url('/gold-bg1.png');
+  background: #f9f3ff;
+  background-image: url('/silver-bg1.png'), url('/silver-bg2.png'),
+    url('/silver-bg3.png'), url('/silver-bg4.png');
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-position: 20% 10%, 75% 100%, 35% 85%, 55% 20%;
+  background-size: 151px, 124px, 140px, 140px;
   .dual {
     display: flex;
     width: 100%;
     height: 100%;
     .left {
-      width: 50%;
+      width: 65%;
       height: 100%;
       display: flex;
-      align-items: center;
       justify-content: flex-end;
+      align-items: center;
+      .image {
+        max-width: 515px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .right {
+      width: 35%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+      padding-right: 35px;
+      .category {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: #877698;
+        position: absolute;
+        right: 0;
+        top: 35px;
+        cursor: pointer;
+        opacity: 0.8;
+      }
       .text {
         max-width: 285px;
+        text-align: right;
         h4 {
           font-style: normal;
           font-weight: 500;
           font-size: 89px;
           line-height: 108px;
           text-transform: uppercase;
-          color: #98766c;
+          color: #877698;
         }
         p {
           font-style: normal;
@@ -77,6 +108,8 @@ export default {
         .brows {
           display: flex;
           margin-top: 25px;
+          align-items: center;
+          justify-content: flex-end;
           cursor: pointer;
           p {
             font-style: normal;
@@ -93,38 +126,11 @@ export default {
         }
       }
     }
-    .right {
-      width: 50%;
-      height: 100%;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .category {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 23px;
-        line-height: 28px;
-        text-transform: uppercase;
-        color: #98766c;
-        position: absolute;
-        right: 0;
-        top: 35px;
-        cursor: pointer;
-        opacity: 0.8;
-      }
-      #category-modal {
-        position: absolute;
-        right: 0px;
-        transition: 0.3s ease all;
-      }
-      .image {
-        max-width: 515px;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
-    }
+  }
+  #category-modal {
+    position: absolute;
+    right: 0px;
+    transition: 0.3s ease all;
   }
 }
 </style>
