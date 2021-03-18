@@ -71,7 +71,7 @@ export default {
   .dual {
     display: flex;
     width: 100%;
-    height: 100%;
+
     margin-top: 63px;
     .left {
       width: 60%;
